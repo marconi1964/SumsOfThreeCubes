@@ -4,7 +4,12 @@ This repo contains a C implementation of the algorithm described in the paper [O
 
 It uses the [primesieve](https://github.com/kimwalisch/primesieve) and [GMP](https://gmplib.org/) libraries which need to be installed before you can build the software in this repo.
 
-To build just type `make`.
+Use `./install.sh` to install those dependency (and build-essential for gcc)
+Use `./uninstall.sh` to uninstall primesieve and gmp.
+
+
+
+To build just type `make`. `make clean` first, then `make`
 
 To search for for solutions to x^3 + y^3 + z^3 = k for cubefree k = +/- 3 mod 9 at most 1000 with |x| > |y| > |z| and |z| <= zmax and d := |x+y| in the interval [2,dmax] with its largest prime divisor p in [pmin,pmax] using n threads running in parallel, type
 
